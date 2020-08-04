@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Beagle</title>
+     
+</head>
+
+<body>
+    <div class="preloader">
+        <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="89" height="91" viewBox="0 0 89 91">
+            <image id="загрузка" width="89" height="91"
+                xlink:href="data:img/png;base64,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" />
+        </svg>
+    </div>
+
+
+    <header class="header">
+        <div class="container">
+            <div class="header_body">
+                <a href="" class="header_logo">
+                    <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture>
+                </a>
+                <div class="header_burger">
+                    <span></span>
+                </div>
+                <nav class="header_menu">
+                    <ul class="header_list">
+                        <li>
+                            <a href="#" class="header_link">How it works</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header_link">About US</a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="search">
+        <div class="container">
+            <div class="main_search">
+                <div class="search_drag">
+                    <div class="drag_head">
+                        <p>Drag & Drop an Image here or <a href="#">Browse</a></p>
+                    </div>
+                    <div class="drag_pic">
+                        <picture><source srcset="img/main_pic.webp" type="image/webp"><img src="img/main_pic.png" alt=""></picture>
+                    </div>
+                    <div class="drag_flex" id="active_button">
+                        <p class="btn">top, t-sirts, seatshirts</p>
+                        <p class="btn active">top, t-sirts, seatshirts</p>
+                        <p class="btn">top, t-sirts</p>
+                        <p class="btn">skirt</p>
+                        <p class="btn">pants</p>
+                    </div>
+                </div>
+
+                <div class="search_result">
+                    <div class="search_nav">
+                        <div class="search_dropdown">
+                            <span><a href="#">Gender</a></span>
+                            <div class="dropdown_content">
+                                <div class="radio_">
+                                    <input type="radio" name="gender" id="Men">
+                                    <label for="Men">Men</label>
+                                </div>
+                                <div class="radio_">
+                                    <input type="radio" name="gender" id="Women">
+                                    <label for="Women">Women</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search_dropdown">
+                            <span><a href="#">Priority</a></span>
+                            <div class="dropdown_content">
+                                <a href="#">
+                                    <p>1</p>
+                                </a>
+                                <a href="#">
+                                    <p>2</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="search_dropdown">
+                            <span><a href="#">Product type</a></span>
+                            <div class="dropdown_content">
+                                <a href="#">
+                                    <p>1</p>
+                                </a>
+                                <a href="#">
+                                    <p>2</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="search_dropdown">
+                            <span><a href="#">Remove dublicate</a></span>
+
+                        </div>
+                        <div class="search_dropdown">
+                            <span><a href="#">Clear</a></span>
+
+                        </div>
+                    </div>
+                    <div class="search_plate">
+                        <div class="plate_grid">
+                            <div class="grid_item">
+                                <div class="item_name">
+                                    <picture><source srcset="img/item/top.webp" type="image/webp"><img src="img/item/top.png" alt=""></picture>
+                                    <p>Rick Owens Utigesneden top</p>
+                                </div>
+                                <div class="price">
+                                    <p>445 €</p>
+                                    <p>635 €</p>
+                                </div>
+                            </div>
+                            <div class="grid_item">
+                                <div class="item_name">
+                                    <picture><source srcset="img/item/skirt.webp" type="image/webp"><img src="img/item/skirt.png" alt=""></picture>
+                                    <p>Rick Owens Utigesneden top</p>
+                                </div>
+                                <div class="price">
+                                    <p>332 €</p>
+                                    <p>358 €</p>
+                                </div>
+                            </div>
+                            <div class="grid_item">
+                                <div class="item_name">
+                                    <picture><source srcset="img/item/Layer.webp" type="image/webp"><img src="img/item/Layer.png" alt=""></picture>
+                                    <p>Berghaus cropped logo t-shirt with draw cord ...</p>
+                                </div>
+                                <div class="price">
+                                    <p>60 €</p>
+
+                                </div>
+                            </div>
+                            <div class="grid_item">
+                                <div class="item_name">
+                                    <picture><source srcset="img/item/t-shirt.webp" type="image/webp"><img src="img/item/t-shirt.png" alt=""></picture>
+                                    <p>Rick Owens Utigesneden top</p>
+                                </div>
+                                <div class="price">
+                                    <p>445 €</p>
+                                    <p>635 €</p>
+                                </div>
+
+                            </div>
+                            <div class="grid_item">
+                                <div class="item_name">
+                                    <picture><source srcset="img/item/Layer1.webp" type="image/webp"><img src="img/item/Layer1.png" alt=""></picture>
+                                    <p>Rick Owens Utigesneden top</p>
+                                </div>
+                                <div class="price">
+                                    <p>332 €</p>
+                                    <p>358 €</p>
+                                </div>
+
+                            </div>
+                            <div class="grid_item">
+                                <div class="item_name">
+                                    <picture><source srcset="img/item/Layer.webp" type="image/webp"><img src="img/item/Layer.png" alt=""></picture>
+                                    <p>Berghaus cropped logo t-shirt with draw cord ...</p>
+                                </div>
+                                <div class="price">
+                                    <p>60 €</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+       
+        
+        </script>
+    <script>
+       
+    </script>
+    <script src="js/script.min.js"></script> 
+</body>
+
+</html>
